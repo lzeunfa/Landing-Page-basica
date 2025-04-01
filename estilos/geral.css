@@ -15,27 +15,26 @@ body{width: 100%;
 }
 
 /*tema claro*/
-body.light-theme{
+.light-theme{
     background-color: #e4e4e4;
     color: #333333;
 }
 
 /*tema escuro*/
-body.dark-theme{
+.dark-theme{
     background-color: #333333;
     color: #e4e4e4;
 }
 
-div#pt1{
+#pt1{
     position: relative;
     width:100%;
     height: 100vh;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.719);
     transition: 1s;
-    
 }
 
-div#pt1 > div#pt1cnt{
+#pt1 > #pt1cnt{
     width: 100%;
     position: absolute;
     top: 50%;
@@ -44,22 +43,28 @@ div#pt1 > div#pt1cnt{
 }
 
 /*imagem de perfil*/
-div#pt1 > div#pt1cnt > img#ft{border-radius: 50%;
+#pt1 > #pt1cnt > #ft{border-radius: 50%;
         margin: 30px 0px 15px 30px;
 
 }
 
 /*botão para mudança de tema*/
-div#pt1 > div#pt1cnt > img#lamp{
+#pt1 > #pt1cnt > #lamp{
     position: fixed;
     top: -20%;
     left: 85%;
     border-radius: 50%;
     cursor: pointer;
     transition: 1s;
+    outline: none;
+    background: transparent;
 }
 
-h1#h1pt1{
+#pt1 > #pt1cnt > #lamp:focus{
+    outline: none;
+}
+
+#h1pt1{
     color: #333333;
     font-size: 2.2em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -67,7 +72,7 @@ h1#h1pt1{
     transition: 1s;
 }
 
-p#ppt1{
+#ppt1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.2em;
     text-align: left;
@@ -76,7 +81,7 @@ p#ppt1{
     transition: 1s;
 }
 
-div#pt1 > div#pt1cnt > input.txt{
+#pt1 > #pt1cnt > .txt{
     padding-left: 5px;
     margin: 0px 10px 10px 30px;
     height: 50px;
@@ -86,7 +91,7 @@ div#pt1 > div#pt1cnt > input.txt{
     width: 220px;
 }
 
-div#pt1 > div#pt1cnt > input.sub{
+#pt1 > #pt1cnt > .sub{
     margin: 0px 10px 10px 10px;
     padding: 10px;
     height: 50px;
@@ -97,7 +102,7 @@ div#pt1 > div#pt1cnt > input.sub{
     transition: 0.5s;
 }
 
-div#pt1 > div#pt1cnt > input.sub:hover{
+#pt1 > #pt1cnt > .sub:hover{
     cursor: pointer;
     color: #383843;
     background-color: #ffffff;
@@ -106,7 +111,7 @@ div#pt1 > div#pt1cnt > input.sub:hover{
 
 /*acabou a pt1 do site agr a pt2*/
 
-div#pt2{
+#pt2{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,14 +123,14 @@ div#pt2{
     
 }
 
-div#pt2 > div#pt2cnt > h1{
+#pt2 > #pt2cnt > h1{
     padding: 30px;
     color: white;
     font-size: 2.2em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-div#pt2 > div#pt2cnt > p{
+#pt2 > #pt2cnt > p{
     color: white;
     padding: 20px 20px 20px 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -134,7 +139,7 @@ div#pt2 > div#pt2cnt > p{
 
 /*fim da pt2 agora a pt3*/
 
-div#pt3{
+#pt3{
     display: flex;
     background-color: #333333;
     width:100%;
@@ -144,14 +149,14 @@ div#pt3{
     
 }
 
-div#pt3 > div#conteinerbx3{
+#pt3 > #conteinerbx3{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-div#pt3 > div#conteinerbx3 > div#box3{
+#pt3 > #conteinerbx3 > #box3{
     display: flex;
     min-width: 250px;
     max-width: 500px;
@@ -167,12 +172,12 @@ div#pt3 > div#conteinerbx3 > div#box3{
     margin: 5px 15px 15px 25px;
 }
 
-div#pt3 > div#conteinerbx3 > div#box3 > div.cntbx3 > h1{
+#pt3 > #conteinerbx3 > #box3 > .cntbx3 > h1{
     font-size: 2.2em;
     padding-bottom: 20px;
 }
 
-div#pt3 > div#conteinerbx3 > div#box3 > div.cntbx3 > p{
+#pt3 > #conteinerbx3 > #box3 > .cntbx3 > p{
     font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
     color: rgb(255, 255, 156);
@@ -180,7 +185,7 @@ div#pt3 > div#conteinerbx3 > div#box3 > div.cntbx3 > p{
 
 /*fim da parte 3, começo da parte 4*/
 
-div#pt4{
+#pt4{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,18 +195,18 @@ div#pt4{
     border-bottom:3px dashed #3d3d49;
 }
 
-div#cntpt4{
+#cntpt4{
     text-align: center;
 }
 
-div#pt4 > div#cntpt4 > h1{
+#pt4 > #cntpt4 > h1{
     padding: 30px;
     color: white;
     font-size: 2.2em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-div#pt4 > div#cntpt4 > p{
+#pt4 > #cntpt4 > p{
     color: white;
     padding: 20px 20px 20px 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -213,7 +218,7 @@ mark{
     color: rgb(255, 255, 156);
 }
 
-div#pt4 > div#cntpt4 > input{
+#pt4 > #cntpt4 > input{
     width: 60%;
     padding: 10px;
     border-radius: 10px;
@@ -223,7 +228,7 @@ div#pt4 > div#cntpt4 > input{
     transition: 0.3s;
 }
 
-div#pt4 > div#cntpt4 > input:hover{
+#pt4 > #cntpt4 > input:hover{
     background-color: #c5c5c5;
     color:rgb(255, 255, 156) ;
     cursor: pointer;
